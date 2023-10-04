@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrationform</title>
+        <link rel="stylesheet" href="forms.css">
+        <script src="forms.css"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Registration form</legend>
+            <form name="regform" outsubmit="return register()">
+            <table>
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="Enter first name">
+                    </td>
+                    <td>
+                        <span id="fname_errors"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="text" name="lname" placeholder="Enter last name">
+                    </td>
+                    <td>
+                        <span id="lname_errors">(enter last name)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="pswd" placeholder="Enter valid password">
+                    </td>
+                    <td>
+                        <span id="pswd_errors">(enter valid password)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="pswd" placeholder="Enter valid password">
+                    </td>
+                    <td>
+                        <span id="pswd_errors">(enter valid password)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" name="em" placeholder="Enter valid email">
+                    </td>
+                    <td>
+                        <span id="em_errors">(enter valid email)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        <input type="number" name="uage" placeholder="Enter Age">
+                    </td>
+                    <td>
+                        <span id="em_errors">(enter age >20)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male">male
+                        <input type="radio" name="gender" value="female">Female
+
+                    </td>
+                    <td>
+                        <span id="em_errors">(enter gender)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Skills
+                    </td>
+                    <td>
+                        <input type="checkbox" name="clang" value="clang">clang
+                        <input type="checkbox" name="cpp" value="cpp">cpp
+</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="java lang" value="java lang">Java lang
+                        <input type="checkbox" name="Dot Net" value="Dot Net">Dot Net
+                    </td>
+                    <td>(choose skills)</td>
+                </tr>
+                <tr>
+                    <td>
+                        country
+                    </td>
+                    <td>
+                        <select name="ucountry">
+                            <option value="">Select Country</option>
+                            <option value="ind">india</option>
+                            <option value="usa">America</option>
+                            <option value="uk">London</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span>(select country)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth
+                    </td>
+                    <td>
+                        <input type="date" name="udob">
+                    </td>
+                    <td>
+                        <span>(select date)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        pref Time
+                    </td>
+                    <td>
+                        <input type="time" name="preftime">
+                    </td>
+                    <td>
+                        <span>(choose pref time)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        choose color
+                    </td>
+                    <td>
+                        <input type="color" name="pref color">
+                    </td>
+                    <td>
+                        <span>(choose pref color)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                        <textarea name="uaddress" cols="30" rows="10"></textarea>
+                    </td>
+                    <td>
+                        <span>(write address)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Upload Resume
+                    </td>
+                    <td>
+                        <input type="file" name="ufile">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </fieldset>
+    </body>
+</html>
