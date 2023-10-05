@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even or Odd</title>
+    </head>
+    <body>
+        <h2>Enter the number find Even or Odd</h2>
+        <input type="number" id="num1">
+        <button onclick="find()">Find</button>
+        <script>
+            function find(){
+                let x = document.getElementById("num1").value;
+                let y = x%2;
+                if (y==0){
+                    document.write("Entered number is even");
+                }else{
+                    document.write("Entered number is odd");
+                }
+            }
+        </script>
+    </body>
+</html>

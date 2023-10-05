@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+       <title>Addition</title>
+    </head>
+    <body>
+       <table>
+         <tr>
+            <td>
+               Enter Num1
+               </td>
+                <td>
+                   <input type="number" id="box1" placeholder="Enter Number">
+                </td>
+            </tr>
+            <tr>
+               <td>
+                    Enter Num2
+                </td>
+               <td>
+                   <input type="number" id="box2" placeholder="Enter Number">
+               </td>
+            </tr>
+           <tr>
+               <td>
+                   <button onclick="add()">Add</button>
+                </td>
+           </tr>
+           <tr>
+               <td>
+                   <p id="res" style="color:red;"></p>
+              </td>
+               <td></td>
+           </tr>
+          </table> 
+          <script> 
+            function add(){
+               let x=document.getElementById("box1").value;
+               let a=parseInt(x);
+               let y=document.getElementById("box2").value;
+                let b=parseInt(y);
+                document.getElementById("res").innerHTML=a+b;
+            }
+        
+        </script>
+    </body>
+</html>
